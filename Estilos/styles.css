@@ -114,9 +114,9 @@ main {
     padding: 20px;
 }
 
-#migalhas {
+.migalhas {
     text-decoration: none;
-    color: #e67e22;
+    color: black;
 }
 
 main h2 {

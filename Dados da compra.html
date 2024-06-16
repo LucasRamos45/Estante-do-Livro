@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante do Livro - Carrinho</title>
+    <link rel="stylesheet" href="Estilos/carrinho.css">
+    <link rel="stylesheet" href="Estilos/styles.css">
+</head>
+<header>
+    <div class="cabecalho">
+        <div></div>
+        <div></div>
+        <div style="display: flex; align-items: center;">
+            <img id="logo" src="Imagens/logo.png" alt="logo">
+            <h1>Estante do livro</h1>
+        </div>
+        <div id="cadastro">
+            <p><a href="">Entre</a> ou <br><a href="">cadastre-se</a></p>
+            <a href="#"><img src="Imagens/heart.png" alt="favoritos"></a>
+            <a href="Dados de compra.html"><img src="Imagens/cart.png" alt="carrinho"></a>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><img src="Imagens/menu.png" alt="menu"></a></li>
+            <li><a href="#">Destaques</a></li>
+            <li><a href="#">Gêneros</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Idiomas</a></li>
+            <li><a href="#">Autores</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Exemplo: Machado de Assis">
+            <button type="submit"><img src="Imagens/search.png" alt="buscar"></button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <a class="migalhas" href="index.html">Início > </a>
+    <a class="migalhas" href="Dados da compra.html">Carrinho > </a>
+    <a class="migalhas" style="color: #e67e22" href="Dados da compra.html">Dados da compra > </a>
+    <h2>Dados da compra</h2>
+
+    <section class="purchase-details">
+        <table id="produtos">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="Imagens/Livros/imperfectos.jpg" alt="Imperfeito - Autora: Cristina Larcon"></td>
+                    <td>
+                        Imperfeito - Autora: Cristina Larcon<br>
+                        Editora: Pensando Bem!<br>
+                        Data de edição: maio de 2022 - 256 páginas
+                    </td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <td><img src="Imagens/Livros/voce_pode_tudo.jpg" alt="Você pode Tudo - Autor(a): José Carlos Semenzato"></td>
+                    <td>
+                        Você pode Tudo - Autor(a): José Carlos Semenzato<br>
+                        Editora: Gente<br>
+                        Data de edição: novembro de 2022 - 160 páginas
+                    </td>
+                    <td>R$ 0,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <fieldset id="endereco">
+                <legend>Endereço</legend>
+                <div>
+                    <label for="cep">CEP</label>
+                    <input style="width: 75px" type="text" id="cep" name="cep">
+                </div>                
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input style="width: 500px" type="text" id="cidade" name="cidade">
+                </div>
+                <div>
+                    <label for="uf">UF</label>
+                    <input type="text" id="uf" name="uf">
+                </div>
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+                <div>
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="logradouro">
+                </div>
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero">
+                </div>
+                <div>
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" name="complemento">
+                </div>
+            </fieldset>
+
+            <fieldset id="frete">
+                <legend>Frete</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="frete">
+                                <label><input type="radio" name="frete" value="sedex"> Correios SEDEX</label>
+                            </td>
+                            <td class="tempo">
+                                <p>5 dias úteis</p>
+                            <td>
+                                <p>R$ 25,00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="frete">
+                                <label><input type="radio" name="frete" value="transportadora"> Transportadora Jadlog</label>
+                            </td>
+                            <td class="tempo">
+                                <p>9 dias úteis</p>
+                            </td>
+                            <td>
+                                <p>R$ 12,90</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Método de pagamento</legend>
+                <label><input type="radio" name="pagamento" value="credito" onclick="mostrarCamposCartao()">Cartão de crédito</label>
+                <label><input type="radio" name="pagamento" value="debito" onclick="mostrarCamposCartao()">Cartão de Débito</label>
+                <label><input type="radio" name="pagamento" value="pix" onclick="esconderCamposCartao()">PIX (à vista)</label>
+                <label><input type="radio" name="pagamento" value="boleto" onclick="esconderCamposCartao()">Boleto</label>
+                <div id="cartao-cadastrado" style="display:none;">
+                    <label for="cart"></label>
+                </div>
+            </fieldset>
+            <button type="submit">Confirmar</button>            
+        </form>
+    </section>
+</main>    
+    <div class="rodape">
+        <div style="display: flex; align-items: center;">
+            <img id="logo" src="Imagens/logo.png" alt="logo">
+            <h1>Estante do livro</h1>
+        </div>
+        <div><img src="Imagens/redes_sociais.png" alt="Redes Sociais"></div>
+    </div> 
+    <footer>
+        <div class="institucional">
+            <h2>Institucional</h3>
+            <ul>
+                <li><a href="#">Quem somos?</a></li>
+                <li><a href="#">Direitos autorais</a></li>
+                <li><a href="#">Trabalhe conosco</a></li>
+            </ul>
+        </div>
+        <div class="atendimento">
+            <h2>Atendimento</h3>
+            <ul>
+                <li><a href="#">Central de ajuda</a></li>
+                <li><a href="#">Garantias</a></li>
+                <li><a href="#">Troca e devolução</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Fale conosco</a></li>
+            </ul>
+        </div>
+        <div class="formas-pagamento">
+            <h2>Formas de Pagamento</h3>
+            <img src="Imagens/formas_pagamento.png" alt="Formas de Pagamento">
+        </div>
+    </footer>
+    <div class="sobre">
+        <div></div>
+        <div></div>
+        <div>
+            <p>www.lucasramos45.github.io/Estante-do-Livro - Venda de Livros Online Ltda - CNPJ 99.999.999/9999-99</p>
+            <p>Rua do Principal, Centro, Cidade/Ex, CEP: 00000-000 - Formulário de Atendimento</p>
+        </div>
+        <div class="ajuda">
+            <img src="Imagens/ajuda.png" alt="">
+            <p>Ajuda</p>
+        </div>
+        <div></div>
+    </div>    
+</body>
+</html>
