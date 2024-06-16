@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    scrollbar-width: none;
 }
 
 
@@ -125,16 +126,14 @@ main h2 {
 .mais-vendidos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
-.destaques, .mais-vendidos {
+.destaques {
     display: flex;
     justify-content: center;
-}
-
-
-.destaques, .mais-vendidos {
+    flex-wrap: wrap;
     margin-bottom: 40px;
 }
 
