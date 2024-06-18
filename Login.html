@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante do Livro - Login</title>
+    <link rel="stylesheet" href="Estilos/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .modal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .modal-content img {
+            width: 50px;
+        }
+        .modal-content h2 {
+            margin: 20px 0;
+        }
+        .modal-content input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .modal-content a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .modal-content a:hover {
+            text-decoration: underline;
+        }
+        .modal-content .btn {
+            width: 85%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .modal-content .btn:hover {
+            background-color: #0056b3;
+        }
+        .modal-content .btn-google {
+            background-color: #db4437;
+        }
+        .modal-content .btn-microsoft {
+            background-color: #2b579a;
+        }
+        .modal-content .alternative {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Código do cabeçalho aqui -->
+    </header>
+
+    <main>
+        <!-- Código do corpo principal aqui -->
+    </main>
+
+    <div class="modal">
+        <div class="modal-content">
+            <img src="Imagens/logo.png" alt="logo">
+            <h2>Login</h2>
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <a href="#">Primeira vez aqui? <span>Cadastrar-se</span></a><br>
+            <a href="#">Problema para entrar? <span>Restaurar senha</span></a>
+            <button class="btn">Entrar</button>
+            <div class="alternative">OU</div>
+            <button class="btn btn-google">Continuar com o Google</button>
+            <button class="btn btn-microsoft">Continuar com a Microsoft</button>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Código do rodapé aqui -->
+    </footer>
+</body>
+</html>

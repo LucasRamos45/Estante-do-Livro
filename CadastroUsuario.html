@@ -6,7 +6,79 @@
     <title>Estante do Livro - Principal</title>
     <link rel="stylesheet" href="Estilos/styles.css">
     <link rel="stylesheet" href="Estilos/CadastroUsuario.css">
-</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .modal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .modal-content h2 {
+            margin-bottom: 20px;
+        }
+        .modal-content input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .modal-content span {
+            margin-top: 0;
+            margin-left: 10%;
+        }
+
+        .modal-content .input-error {
+            border-color: red;
+        }
+        .modal-content .input-error + span {
+            color: red;
+            font-size: 12px;
+            display: block;
+            text-align: left;
+        }
+        .modal-content .btn {
+            width: 85%;
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .modal-content .btn:hover {
+            background-color: #45a049;
+        }
+        .modal-content .btn-google {
+            background-color: #db4437;
+        }
+        .modal-content .btn-microsoft {
+            background-color: #2b579a;
+        }
+        .modal-content .alternative {
+            margin: 20px 0;
+        }
+    </style>
+</head> 
 <body>
     <header>
         <div class="cabecalho">
@@ -17,14 +89,14 @@
                 <h1>Estante do livro</h1>
             </div>
             <div id="cadastro">
-                <p><a href="">Entre</a> ou <br><a href="">cadastre-se</a></p>
+                <p><a href="">Entre</a> ou <br><a href="CadastroUsuario.html">cadastre-se</a></p>
                 <a href="#"><img src="Imagens/heart.png" alt="favoritos"></a>
                 <a href="Dados da compra.html"><img src="Imagens/cart.png" alt="carrinho"></a>
             </div>
         </div>
         <nav>
             <ul>
-                <li><img src="Imagens/menu.png" alt="menu"></li>
+                <li><img src="Imagens/menu.png" alt="menu"></a></li>
                 <li><a href="#">Destaques</a></li>
                 <li><a href="#">Gêneros</a></li>
                 <li><a href="#">Promoções</a></li>
@@ -39,7 +111,90 @@
     </header>
 
     <main>
-        <!-- Main content here -->
+        <a class="migalhas" style="color: #e67e22" href="#">Início ></a>
+        <h2>Destaques</h2>
+        <section class="destaques">
+            <div class="autores">
+                <div class="autor">
+                    <img src="Imagens/Autores/pedro_band.jpg" alt="Pedro Bandeira">
+                    <p>Pedro Bandeira</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/george_orwell.jpg" alt="George Orwell">
+                    <p>George Orwell</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/machado_de_assis.jpeg" alt="Machado de Assis">
+                    <p>Machado de Assis</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/carla_madeira.jpg" alt="Carla Madeira">
+                    <p>Carla Madeira</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/chico_xavier.jpg" alt="Chico Xavier">
+                    <p>Chico Xavier</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/agatha_christie.jpg" alt="Agatha Christie">
+                    <p>Agatha Christie</p>
+                </div>
+            </div>
+        </section>
+
+        <h2>Mais vendidos</h2>
+        <section class="mais-vendidos">
+            <div class="livros">
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/imperfectos.jpg" alt="Imperfectos">
+                    <p>Imperfectos</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/voce_pode_tudo.jpg" alt="Você pode Tudo">
+                    <p>Você pode Tudo</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/por_que_escrevo.jpg" alt="Por que eu escrevo">
+                    <p>Por que eu escrevo</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/em_fogo_lento.jpg" alt="Em fogo lento">
+                    <p>Em fogo lento</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/til.jpg" alt="Til">
+                    <p>Til</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/a_temperatura.jpg" alt="A temperatura entre você e eu">
+                    <p>A temperatura entre você e eu</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <div class="rodape">
         <div style="display: flex; align-items: center;">
@@ -49,7 +204,28 @@
         <div><img src="Imagens/redes_sociais.png" alt="Redes Sociais"></div>
     </div> 
     <footer>
-        <!-- Footer content here -->
+        <div class="institucional">
+            <h2>Institucional</h3>
+            <ul>
+                <li><a href="#">Quem somos?</a></li>
+                <li><a href="#">Direitos autorais</a></li>
+                <li><a href="#">Trabalhe conosco</a></li>
+            </ul>
+        </div>
+        <div class="atendimento">
+            <h2>Atendimento</h3>
+            <ul>
+                <li><a href="#">Central de ajuda</a></li>
+                <li><a href="#">Garantias</a></li>
+                <li><a href="#">Troca e devolução</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Fale conosco</a></li>
+            </ul>
+        </div>
+        <div class="formas-pagamento">
+            <h2>Formas de Pagamento</h3>
+            <img src="Imagens/formas_pagamento.png" alt="Formas de Pagamento">
+        </div>
     </footer>
     <div class="sobre">
         <div></div>
@@ -64,25 +240,26 @@
         </div>
         <div></div>
     </div>
-
-    <!-- User Registration Modal -->
-    <div class="modal">
-        <div class="modal-content">
-            <img src="Imagens/logo.png" alt="logo" width="50">
-            <h2>Cadastro de Usuário</h2>
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="E-mail" required>
-            <input type="password" placeholder="Criar Senha" class="input-error" required>
-            <span>Mínimo 6 caracteres. 1 letra Maiúscula e 1 caractere especial</span>
-            <input type="password" placeholder="Repita a nova Senha" class="input-error" required>
-            <span>Senhas não correspondem</span>
-            <input type="text" placeholder="Telefone" required>
-            <button class="btn">Cadastrar</button>
-            <div class="alternative">OU</div>
-            <button class="btn btn-google">Continuar com o Google</button>
-            <button class="btn btn-microsoft">Continuar com a Microsoft</button>
-            <div class="alternative">Já possui cadastro? <a href="#">Entrar</a></div>
-        </div>
+</body>
+</html>
+<!-- User Registration Modal -->
+<div class="modal">
+    <div class="modal-content">
+        <img src="Imagens/logo.png" alt="logo" width="50">
+        <h2>Cadastro de Usuário</h2>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Criar Senha" class="input-error" required>
+        <span>Mínimo 6 caracteres. 1 letra Maiúscula e 1 caractere especial</span>
+        <input type="password" placeholder="Repita a nova Senha" class="input-error" required>
+        <span>Senhas não correspondem</span>
+        <input type="text" placeholder="Telefone" required>
+        <button class="btn">Cadastrar</button>
+        <div class="alternative">OU</div>
+        <button class="btn btn-google">Continuar com o Google</button>
+        <button class="btn btn-microsoft">Continuar com a Microsoft</button>
+        <div class="alternative">Já possui cadastro? <a href="#">Entrar</a></div>
     </div>
+</div>
 </body>
 </html>
