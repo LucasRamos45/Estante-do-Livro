@@ -1,83 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> 
+<html lang="pt-BR">  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estante do Livro - Principal</title>
     <link rel="stylesheet" href="Estilos/styles.css">
+    <link rel="stylesheet" href="Estilos/carrinho.css">
+    <link rel="stylesheet" href="Estilos/login.css">
     <link rel="stylesheet" href="Estilos/CadastroUsuario.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .modal {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        .modal-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 500px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .modal-content h2 {
-            margin-bottom: 20px;
-        }
-        .modal-content input {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .modal-content span {
-            margin-top: 0;
-            margin-left: 10%;
-        }
-
-        .modal-content .input-error {
-            border-color: red;
-        }
-        .modal-content .input-error + span {
-            color: red;
-            font-size: 12px;
-            display: block;
-            text-align: left;
-        }
-        .modal-content .btn {
-            width: 85%;
-            padding: 20px;
-            margin: 10px 0;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .modal-content .btn:hover {
-            background-color: #45a049;
-        }
-        .modal-content .btn-google {
-            background-color: #db4437;
-        }
-        .modal-content .btn-microsoft {
-            background-color: #2b579a;
-        }
-        .modal-content .alternative {
-            margin: 20px 0;
-        }
-    </style>
 </head> 
 <body>
     <header>
@@ -240,26 +170,27 @@
         </div>
         <div></div>
     </div>
-</body>
-</html>
-<!-- User Registration Modal -->
-<div class="modal">
-    <div class="modal-content">
-        <img src="Imagens/logo.png" alt="logo" width="50">
-        <h2>Cadastro de Usuário</h2>
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="E-mail" required>
-        <input type="password" placeholder="Criar Senha" class="input-error" required>
-        <span>Mínimo 6 caracteres. 1 letra Maiúscula e 1 caractere especial</span>
-        <input type="password" placeholder="Repita a nova Senha" class="input-error" required>
-        <span>Senhas não correspondem</span>
-        <input type="text" placeholder="Telefone" required>
-        <button class="btn">Cadastrar</button>
-        <div class="alternative">OU</div>
-        <button class="btn btn-google">Continuar com o Google</button>
-        <button class="btn btn-microsoft">Continuar com a Microsoft</button>
-        <div class="alternative">Já possui cadastro? <a href="#">Entrar</a></div>
+
+    <!-- Cadastro de Usuário -->
+     
+    <div class="modal">
+        <div class="modal-content">
+            <img src="Imagens/logo.png" alt="logo" width="50">
+            <h2>Cadastro de Usuário</h2>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="password" placeholder="Criar Senha" class="input-error" required>
+            <span>Mínimo 6 caracteres. 1 letra Maiúscula e 1 caractere especial</span>
+            <input type="password" placeholder="Repita a nova Senha" class="input-error" required>
+            <span>Senhas não correspondem</span>
+            <input type="text" placeholder="Telefone" required>
+            <button class="btn">Cadastrar</button>
+            <div class="alternative">OU</div>
+            <button class="btn btn-google">Continuar com o Google</button>
+            <button class="btn btn-microsoft">Continuar com a Microsoft</button>
+            <div class="alternative">Já possui cadastro? <a href="#">Entrar</a></div>
+        </div>
     </div>
-</div>
+
 </body>
 </html>

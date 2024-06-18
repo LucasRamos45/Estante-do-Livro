@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-BR"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estante do Livro - Principal</title>
     <link rel="stylesheet" href="Estilos/styles.css">
+    <link rel="stylesheet" href="Estilos/carrinho.css">
     <link rel="stylesheet" href="Estilos/login.css">
+    <link rel="stylesheet" href="Estilos/CadastroUsuario.css">
 </head> 
 <body>
     <header>
@@ -125,21 +127,6 @@
         </section>
     </main>
 
-    <div class="modal">
-        <div class="modal-content">
-            <img src="Imagens/logo.png" alt="logo">
-            <h2>Login</h2>
-            <input type="text" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
-            <a href="#">Primeira vez aqui? <span>Cadastrar-se</span></a><br>
-            <a href="#">Problema para entrar? <span>Restaurar senha</span></a>
-            <button class="btn">Entrar</button>
-            <div class="alternative">OU</div>
-            <button class="btn btn-google">Continuar com o Google</button>
-            <button class="btn btn-microsoft">Continuar com a Microsoft</button>
-        </div>
-    </div>
-
     <div class="rodape">
         <div style="display: flex; align-items: center;">
             <img id="logo" src="Imagens/logo.png" alt="logo">
@@ -184,5 +171,25 @@
         </div>
         <div></div>
     </div>
+
+    <!-- Login -->
+
+    <div class="modal">
+        <div class="modal-content">
+            <img src="Imagens/logo.png" alt="logo" width="50">
+            <h2>Login</h2>
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <div class="alternative">Primeira vez aqui? <a href="#">Cadastrar-se</a></div>
+            <div class="alternative">Problema para entrar? <a href="#">Restaurar senha</a></div>
+            <button class="btn">Entrar</button>
+            <div class="alternative">OU</div>
+            <button class="btn btn-google">Continuar com o Google</button>
+            <button class="btn btn-microsoft">Continuar com a Microsoft</button>
+        </div>
+    </div>
+
+
 </body>
 </html>
+
