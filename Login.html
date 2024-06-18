@@ -1,85 +1,128 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estante do Livro - Login</title>
+    <title>Estante do Livro - Principal</title>
     <link rel="stylesheet" href="Estilos/styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .modal {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        .modal-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .modal-content img {
-            width: 50px;
-        }
-        .modal-content h2 {
-            margin: 20px 0;
-        }
-        .modal-content input {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .modal-content a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .modal-content a:hover {
-            text-decoration: underline;
-        }
-        .modal-content .btn {
-            width: 85%;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .modal-content .btn:hover {
-            background-color: #0056b3;
-        }
-        .modal-content .btn-google {
-            background-color: #db4437;
-        }
-        .modal-content .btn-microsoft {
-            background-color: #2b579a;
-        }
-        .modal-content .alternative {
-            margin: 20px 0;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="Estilos/login.css">
+</head> 
 <body>
     <header>
-        <!-- Código do cabeçalho aqui -->
+        <div class="cabecalho">
+            <div></div>
+            <div></div>
+            <div style="display: flex; align-items: center;">
+                <img id="logo" src="Imagens/logo.png" alt="logo">
+                <h1>Estante do livro</h1>
+            </div>
+            <div id="cadastro">
+                <p><a href="Login.html">Entre</a> ou <br><a href="CadastroUsuario.html">cadastre-se</a></p>
+                <a href="#"><img src="Imagens/heart.png" alt="favoritos"></a>
+                <a href="Dados da compra.html"><img src="Imagens/cart.png" alt="carrinho"></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><img src="Imagens/menu.png" alt="menu"></a></li>
+                <li><a href="#">Destaques</a></li>
+                <li><a href="#">Gêneros</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Idiomas</a></li>
+                <li><a href="#">Autores</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Exemplo: Machado de Assis">
+                <button type="submit"><img src="Imagens/search.png" alt="buscar"></button>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <!-- Código do corpo principal aqui -->
+        <a class="migalhas" style="color: #e67e22" href="#">Início ></a>
+        <h2>Destaques</h2>
+        <section class="destaques">
+            <div class="autores">
+                <div class="autor">
+                    <img src="Imagens/Autores/pedro_band.jpg" alt="Pedro Bandeira">
+                    <p>Pedro Bandeira</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/george_orwell.jpg" alt="George Orwell">
+                    <p>George Orwell</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/machado_de_assis.jpeg" alt="Machado de Assis">
+                    <p>Machado de Assis</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/carla_madeira.jpg" alt="Carla Madeira">
+                    <p>Carla Madeira</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/chico_xavier.jpg" alt="Chico Xavier">
+                    <p>Chico Xavier</p>
+                </div>
+                <div class="autor">
+                    <img src="Imagens/Autores/agatha_christie.jpg" alt="Agatha Christie">
+                    <p>Agatha Christie</p>
+                </div>
+            </div>
+        </section>
+
+        <h2>Mais vendidos</h2>
+        <section class="mais-vendidos">
+            <div class="livros">
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/imperfectos.jpg" alt="Imperfectos">
+                    <p>Imperfectos</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/voce_pode_tudo.jpg" alt="Você pode Tudo">
+                    <p>Você pode Tudo</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/por_que_escrevo.jpg" alt="Por que eu escrevo">
+                    <p>Por que eu escrevo</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/em_fogo_lento.jpg" alt="Em fogo lento">
+                    <p>Em fogo lento</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/til.jpg" alt="Til">
+                    <p>Til</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="livro">
+                    <img class="capa" src="Imagens/Livros/a_temperatura.jpg" alt="A temperatura entre você e eu">
+                    <p>A temperatura entre você e eu</p>
+                    <div id="btn">
+                        <img src="Imagens/heart red.png">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <div class="modal">
@@ -97,8 +140,49 @@
         </div>
     </div>
 
+    <div class="rodape">
+        <div style="display: flex; align-items: center;">
+            <img id="logo" src="Imagens/logo.png" alt="logo">
+            <h1>Estante do livro</h1>
+        </div>
+        <div><img src="Imagens/redes_sociais.png" alt="Redes Sociais"></div>
+    </div> 
     <footer>
-        <!-- Código do rodapé aqui -->
+        <div class="institucional">
+            <h2>Institucional</h3>
+            <ul>
+                <li><a href="#">Quem somos?</a></li>
+                <li><a href="#">Direitos autorais</a></li>
+                <li><a href="#">Trabalhe conosco</a></li>
+            </ul>
+        </div>
+        <div class="atendimento">
+            <h2>Atendimento</h3>
+            <ul>
+                <li><a href="#">Central de ajuda</a></li>
+                <li><a href="#">Garantias</a></li>
+                <li><a href="#">Troca e devolução</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Fale conosco</a></li>
+            </ul>
+        </div>
+        <div class="formas-pagamento">
+            <h2>Formas de Pagamento</h3>
+            <img src="Imagens/formas_pagamento.png" alt="Formas de Pagamento">
+        </div>
     </footer>
+    <div class="sobre">
+        <div></div>
+        <div></div>
+        <div>
+            <p>estantedolivro.com.br - Venda de Livros Online Ltda - CNPJ 99.999.999/9999-99</p>
+            <p>Rua do Principal, Centro, Cidade/Ex, CEP: 00000-000 - Formulário de Atendimento</p>
+        </div>
+        <div class="ajuda">
+            <img src="Imagens/ajuda.png" alt="">
+            <p>Ajuda</p>
+        </div>
+        <div></div>
+    </div>
 </body>
 </html>
