@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estante do Livro - Principal</title>
+    <title>Estante do Livro - Produto</title>
     <link rel="stylesheet" href="Estilos/styles.css">
     <link rel="stylesheet" href="Estilos/carrinho.css">
     <link rel="stylesheet" href="Estilos/login.css">
@@ -65,93 +65,55 @@
 
     <main>
         <a class="migalhas" style="color: #e67e22" href="#"><b>Início ></b></a>
-        <h2>Destaques</h2>
-        <section class="destaques">
-            <div class="autores">
-                <div class="autor">
-                    <img src="Imagens/Autores/pedro_band.jpg" alt="Pedro Bandeira">
-                    <p>Pedro Bandeira</p>
-                </div>
-                <div class="autor">
-                    <img src="Imagens/Autores/george_orwell.jpg" alt="George Orwell">
-                    <p>George Orwell</p>
-                </div>
-                <div class="autor">
-                    <img src="Imagens/Autores/machado_de_assis.jpeg" alt="Machado de Assis">
-                    <p>Machado de Assis</p>
-                </div>
-                <div class="autor">
-                    <img src="Imagens/Autores/carla_madeira.jpg" alt="Carla Madeira">
-                    <p>Carla Madeira</p>
-                </div>
-                <div class="autor">
-                    <img src="Imagens/Autores/chico_xavier.jpg" alt="Chico Xavier">
-                    <p>Chico Xavier</p>
-                </div>
-                <div class="autor">
-                    <img src="Imagens/Autores/agatha_christie.jpg" alt="Agatha Christie">
-                    <p>Agatha Christie</p>
-                </div>
-            </div>
-        </section>
-</main>
-
-
-
-
-        <h2>Mais vendidos</h2>
-        <section class="mais-vendidos">
-            <div class="livros">
-                <div class="livro">
-                    <img class="capa" src="Imagens/Livros/imperfectos.jpg" alt="Imperfectos">
-                    <p>Imperfectos</p>
-                    <div id="btn">
-                        <img class="heartImg" src="Imagens/heart red.png" alt="Heart Image">
-                        <button class="comprar">Comprar</button>
+        <!-- Aqui o Produto -->
+        <div class="container">
+            <h1>Produto</h1>
+            <div class="product">
+                <div class="product-image">
+                    <img src="Imagens/Livros/voce_pode_tudo.jpg" alt="Você pode tudo">
+                    <div class="thumbnails">
+                        <img src="Imagens/Livros/voce_pode_tudo.jpg" alt="Thumbnail 1">
+                        <img src="Imagens/Livros/voce_pode_tudo.jpg" alt="Thumbnail 2">
+                        <img src="Imagens/Livros/voce_pode_tudo.jpg" alt="Thumbnail 3">
                     </div>
                 </div>
-                <div class="livro">
-                    <img class="capa" src="Imagens/Livros/voce_pode_tudo.jpg" alt="Você pode Tudo">
-                    <p>Você pode Tudo</p>
-                    <div id="btn">
-                        <img class="heartImg" src="Imagens/heart red.png" alt="Heart Image">
-                        <button class="comprar">Comprar</button>
+                <div class="product-details">
+                    <h2>Você pode tudo</h2>
+                    <p>Persistência, paixão e apetite para transformar sonhos em realidade.</p>
+                    <p>"A trajetória de Semenzato renderia um filme americano, naquele enredo clássico do self-made man."</p>
+                    <p class="price-old">De: R$ 39,99</p>
+                    <p class="price-new">Por: R$ 29,99</p>
+                    <div id="form">
+                        <div class="payment-options">
+                            <p>R$ 29,99 à vista no pix ou em até 8x de 4,99 sem juros no cartão</p>
+                            <button class="btn">Adicionar ao carrinho</button>
+                            <button class="btn">Comprar agora</button>
+                        </div>
+                        <div class="discount-coupon">
+                            <label for="coupon">Possui um cupom de desconto?</label>
+                            <input type="text" id="coupon" name="coupon" placeholder="Inserir Cupom">
+                            <button class="btn">OK</button>
+                        </div>
+                        <div class="shipping">
+                            <label for="cep">Consultar frete e prazo de entrega</label>
+                            <input type="text" id="cep" name="cep" placeholder="Inserir CEP">
+                            <button class="btn">OK</button>
+                            <a href="#">Não sei meu CEP</a>
+                            <p>Frete selecionado: SEDEX 5 dias</p>
+                        </div>
+                        <div class="total-price">
+                            <p>Produto: Livro Você pode Tudo - R$ 29,99</p>
+                            <p>Frete: SEDEX 5 dias - R$ 10,00</p>
+                            <p>Total: R$ 39,99</p>
+                        </div>
                     </div>
-                </div>
-                <div class="livro">
-                    <img class="capa" src="Imagens/Livros/por_que_escrevo.jpg" alt="Por que eu escrevo">
-                    <p>Por que eu escrevo</p>
-                    <div id="btn">
-                        <img class="heartImg" src="Imagens/heart red.png" alt="Heart Image">
-                        <button class="comprar">Comprar</button>
-                    </div>
-                </div>
-                <div class="livro">
-                    <img class="capa" src="Imagens/Livros/em_fogo_lento.jpg" alt="Em fogo lento">
-                    <p>Em fogo lento</p>
-                    <div id="btn">
-                        <img class="heartImg" src="Imagens/heart red.png" alt="Heart Image">
-                        <button class="comprar">Comprar</button>
-                    </div>
-                </div>
-                <div class="livro">
-                    <img class="capa" src="Imagens/Livros/til.jpg" alt="Til">
-                    <p>Til</p>
-                    <div id="btn">
-                        <img class="heartImg" src="Imagens/heart red.png" alt="Heart Image">
-                        <button class="comprar">Comprar</button>
-                    </div>
-                </div>
-                <div class="livro">
-                    <img class="capa" src="Imagens/Livros/a_temperatura.jpg" alt="A temperatura entre você e eu">
-                    <p>A temperatura entre você e eu</p>
-                    <div id="btn">
-                        <img class="heartImg" src="Imagens/heart red.png" alt="Heart Image">
-                        <button class="comprar">Comprar</button>
+                    <div class="payment-methods">
+                        <h3>Métodos de pagamento</h3>
+                        <img src="Imagens/formas_pagamento.png" alt="pagamento">
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <div class="rodape">
         <div style="display: flex; align-items: center;">

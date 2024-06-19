@@ -11,6 +11,7 @@ body {
     box-sizing: border-box;
     color: #2c3e50;
     background-color: #ecf0f1;
+    overflow-x: hidden;
 }
 
 
@@ -175,10 +176,6 @@ main {
     color: black;
 }
 
-main h2 {
-    text-align: center;
-}
-
 .mais-vendidos {
     display: flex;
     flex-wrap: wrap;
@@ -239,7 +236,7 @@ main h2 {
 }
 
 
-.destaques {
+.destaques, .mais-vendidos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
