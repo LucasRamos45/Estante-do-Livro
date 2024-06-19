@@ -15,6 +15,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
+<<<<<<< Updated upstream
 document.getElementById('cadastroForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const senha = document.getElementById('senha').value;
@@ -37,3 +38,14 @@ function cadastrarFacebook() {
     // Lógica para cadastro com Facebook
     alert('Cadastro com Facebook não implementado.');
 }
+=======
+// document.getElementById('heartImg').addEventListener('click', function() {
+//     this.src = 'Imagens/heart red2.png';
+// });
+
+document.querySelectorAll('.heartImg').forEach(function(img) {
+    img.addEventListener('click', function() {
+        this.src = 'Imagens/heart red2.png';
+    });
+});
+>>>>>>> Stashed changes
