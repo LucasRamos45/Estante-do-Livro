@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Opções</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu img {
+            cursor: pointer;
+        }
+
+        .menu-window {
+            width: 30%;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu-window ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu-window li {
+            padding: 5px 10px;
+            cursor: pointer;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .menu-window li:hover {
+            background-color: #f0f0f0;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="menu"><img src="Imagens/menu.png" alt="menu"></li>
+    </ul>
+
+    <div id="menu-window" class="menu-window hidden">
+        <ul>
+            <li>Antropologia</li>
+            <li>Artes</li>
+            <li>Auto ajuda</li>
+            <li>Biografias</li>
+            <li>Ciência Política</li>
+            <li>Comunicação</li>
+            <li>Direito</li>
+            <li>Engenharia</li>
+            <li>História do Brasil</li>
+            <li>História Geral</li>
+            <li>Infanto-juvenis</li>
+            <li>Literatura Brasileira</li>
+            <li>Literatura Estrangeira</li>
+            <li>Livros Raros</li>
+            <li>Medicina</li>
+            <li>Psicologia</li>
+            <li>Ver todos</li>
+        </ul>
+    </div>
+
+    <script>
+        document.querySelector('#menu img').addEventListener('click', function() {
+            var menuWindow = document.getElementById('menu-window');
+            if (menuWindow.classList.contains('hidden')) {
+                menuWindow.classList.remove('hidden');
+            } else {
+                menuWindow.classList.add('hidden');
+            }
+        });
+
+        document.addEventListener('click', function(event) {
+            var menuWindow = document.getElementById('menu-window');
+            var menuIcon = document.querySelector('#menu img');
+            if (!menuWindow.contains(event.target) && event.target !== menuIcon) {
+                menuWindow.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
