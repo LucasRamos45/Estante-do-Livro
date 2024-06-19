@@ -3,104 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu de Opções</title>
+    <title>Produto</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        #menu img {
-            cursor: pointer;
-        }
-
-        .menu-window {
-            width: 30%;
-            position: absolute;
-            top: 50px;
-            left: 20px;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .menu-window ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .menu-window li {
-            padding: 5px 10px;
-            cursor: pointer;
-            width: 50%;
-            box-sizing: border-box;
-        }
-
-        .menu-window li:hover {
             background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
 
-        .hidden {
-            display: none;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
+
+        h1 {
+            text-align: center;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-image {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .thumbnails img {
+            width: 50px;
+            margin: 0 5px;
+        }
+
+        .product-details {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .product-details h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-details p {
+            margin: 5px 0;
+        }
+
+        .price-old {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .price-new {
+            font-size: 24px;
+            color: #e74c3c;
+        }
+
+        .payment-options {
+            margin: 20px 0;
+        }
+
+        #form {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .discount-coupon,
+        .shipping {
+            margin: 20px 0;
+        }
+
+        .discount-coupon input,
+        .shipping input {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .total-price {
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .payment-methods {
+            text-align: center;
+        }
+
+        .payment-methods img {
+            width: 50px;
+            margin: 5px;
+        }
+
     </style>
 </head>
 <body>
-    <ul>
-        <li id="menu"><img src="Imagens/menu.png" alt="menu"></li>
-    </ul>
-
-    <div id="menu-window" class="menu-window hidden">
-        <ul>
-            <li>Antropologia</li>
-            <li>Artes</li>
-            <li>Auto ajuda</li>
-            <li>Biografias</li>
-            <li>Ciência Política</li>
-            <li>Comunicação</li>
-            <li>Direito</li>
-            <li>Engenharia</li>
-            <li>História do Brasil</li>
-            <li>História Geral</li>
-            <li>Infanto-juvenis</li>
-            <li>Literatura Brasileira</li>
-            <li>Literatura Estrangeira</li>
-            <li>Livros Raros</li>
-            <li>Medicina</li>
-            <li>Psicologia</li>
-            <li>Ver todos</li>
-        </ul>
+    <div class="container">
+        <h1>Produto</h1>
+        <div class="product">
+            <div class="product-image">
+                <img src="Imagens/Livros/voce_pode_tudo.jpg" alt="Você pode tudo">
+                <div class="thumbnails">
+                    <img src="Imagens/Livros/voce_pode_tudo.jpg" alt="Thumbnail 1">
+                    <img src="Imagens/Livros/voce_pode_tudo.jpg" alt="Thumbnail 2">
+                    <img src="Imagens/Livros/voce_pode_tudo.jpg" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Você pode tudo</h2>
+                <p>Persistência, paixão e apetite para transformar sonhos em realidade.</p>
+                <p>"A trajetória de Semenzato renderia um filme americano, naquele enredo clássico do self-made man."</p>
+                <p class="price-old">De: R$ 39,99</p>
+                <p class="price-new">Por: R$ 29,99</p>
+                <div id="form">
+                    <div class="payment-options">
+                        <p>R$ 29,99 à vista no pix ou em até 8x de 4,99 sem juros no cartão</p>
+                        <button class="btn">Adicionar ao carrinho</button>
+                        <button class="btn">Comprar agora</button>
+                    </div>
+                    <div class="discount-coupon">
+                        <label for="coupon">Possui um cupom de desconto?</label>
+                        <input type="text" id="coupon" name="coupon" placeholder="Inserir Cupom">
+                        <button class="btn">OK</button>
+                    </div>
+                    <div class="shipping">
+                        <label for="cep">Consultar frete e prazo de entrega</label>
+                        <input type="text" id="cep" name="cep" placeholder="Inserir CEP">
+                        <button class="btn">OK</button>
+                        <a href="#">Não sei meu CEP</a>
+                        <p>Frete selecionado: SEDEX 5 dias</p>
+                    </div>
+                    <div class="total-price">
+                        <p>Produto: Livro Você pode Tudo - R$ 29,99</p>
+                        <p>Frete: SEDEX 5 dias - R$ 10,00</p>
+                        <p>Total: R$ 39,99</p>
+                    </div>
+                </div>
+                <div class="payment-methods">
+                    <h3>Métodos de pagamento</h3>
+                    <img src="visa.png" alt="Visa">
+                    <img src="mastercard.png" alt="Mastercard">
+                    <img src="amex.png" alt="American Express">
+                    <img src="boleto.png" alt="Boleto">
+                    <img src="paypal.png" alt="Paypal">
+                    <img src="hipercard.png" alt="Hipercard">
+                    <img src="pix.png" alt="Pix">
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        document.querySelector('#menu img').addEventListener('click', function() {
-            var menuWindow = document.getElementById('menu-window');
-            if (menuWindow.classList.contains('hidden')) {
-                menuWindow.classList.remove('hidden');
-            } else {
-                menuWindow.classList.add('hidden');
-            }
-        });
-
-        document.addEventListener('click', function(event) {
-            var menuWindow = document.getElementById('menu-window');
-            var menuIcon = document.querySelector('#menu img');
-            if (!menuWindow.contains(event.target) && event.target !== menuIcon) {
-                menuWindow.classList.add('hidden');
-            }
-        });
-    </script>
 </body>
 </html>
