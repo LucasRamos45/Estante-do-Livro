@@ -6,8 +6,12 @@
     <title>Estante do Livro - Principal</title>
     <link rel="stylesheet" href="Estilos/styles.css">
     <link rel="stylesheet" href="Estilos/carrinho.css">
-    <link rel="stylesheet" href="Estilos/login.css">
     <link rel="stylesheet" href="Estilos/CadastroUsuario.css">
+    <script>
+        function cadastrado() {
+            alert('Cadastro realizado com sucesso!');
+        }
+    </script>
 </head> 
 <body>
     <header>
@@ -19,9 +23,9 @@
                 <h1>Estante do livro</h1>
             </div>
             <div id="cadastro">
-                <p><a href="">Entre</a> ou <br><a href="CadastroUsuario.html">cadastre-se</a></p>
-                <a href="#"><img src="Imagens/heart.png" alt="favoritos"></a>
-                <a href="Dados da compra.html"><img src="Imagens/cart.png" alt="carrinho"></a>
+                <p><a href="Login.html">Entre</a> ou <br><a href="CadastroUsuario.html">Cadastre-se</a></p>
+                <a href="#"><img src="" alt=""></a>
+                <a href="Carrinho.html"><img src="Imagens/cart.png" alt="carrinho"></a>
             </div>
         </div>
         <nav>
@@ -184,7 +188,7 @@
             <input type="password" placeholder="Repita a nova Senha" class="input-error" required>
             <span>Senhas não correspondem</span>
             <input type="text" placeholder="Telefone" required>
-            <button class="btn">Cadastrar</button>
+            <button onclick="cadastrado()" class="btn">Cadastrar</button>
             <div class="alternative">OU</div>
             <button class="btn btn-google">Continuar com o Google</button>
             <button class="btn btn-microsoft">Continuar com a Microsoft</button>

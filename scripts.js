@@ -15,25 +15,29 @@ document.addEventListener('click', function(event) {
     }
 });
 
-document.getElementById('cadastroForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const senha = document.getElementById('senha').value;
-    const confirmaSenha = document.getElementById('confirmaSenha').value;
+// document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     const senha = document.getElementById('senha').value;
+//     const confirmaSenha = document.getElementById('confirmaSenha').value;
 
-    if (senha !== confirmaSenha) {
-        alert('As senhas não correspondem. Tente novamente.');
-    } else {
-        alert('Cadastro realizado com sucesso!');
-        // Aqui você pode adicionar a lógica para enviar os dados para o servidor
-    }
-});
+//     if (senha !== confirmaSenha) {
+//         alert('As senhas não correspondem. Tente novamente.');
+//     } else {
+//         alert('Cadastro realizado com sucesso!');
+//         // Aqui você pode adicionar a lógica para enviar os dados para o servidor
+//     }
+// });
 
-function cadastrarGoogle() {
-    // Lógica para cadastro com Google
-    alert('Cadastro com Google não implementado.');
-}
+// function cadastrarGoogle() {
+//     // Lógica para cadastro com Google
+//     alert('Cadastro com Google não implementado.');
+// }
 
-function cadastrarFacebook() {
-    // Lógica para cadastro com Facebook
-    alert('Cadastro com Facebook não implementado.');
-}
+// function cadastrarFacebook() {
+//     // Lógica para cadastro com Facebook
+//     alert('Cadastro com Facebook não implementado.');
+//}
+
+// function cadastrado() {
+//     alert('Cadastro realizado com sucesso!');    
+// }
