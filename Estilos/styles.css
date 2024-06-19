@@ -186,6 +186,24 @@ main h2 {
     margin-bottom: 40px;
 }
 
+.comprar {
+    background-color: #1ABC9C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.comprar:hover {
+    background-color: #16a085;
+}
+
 .destaques {
     display: flex;
     justify-content: center;
