@@ -3,6 +3,10 @@
     scrollbar-width: none;
 }
 
+#menuImage{
+    width: 30px;
+    height: 30px;
+}
 
 body {
     font-family: Arial, sans-serif;

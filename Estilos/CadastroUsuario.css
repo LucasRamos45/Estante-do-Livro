@@ -1,6 +1,12 @@
 body {
     font-family: Arial, sans-serif;
 } 
+
+#menuImage{
+    width: 30px;
+    height: 30px;
+}
+
 .modal {
     display: flex;
     flex-direction: column;
