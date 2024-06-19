@@ -27,8 +27,8 @@
         <nav>
             <ul>
                 <li id="menu"><img src="Imagens/menu.png" alt="menu"></a></li>
-                <li><a href="#">Destaques</a></li>
-                <li><a href="#">Gêneros</a></li>
+                <!-- <li><a href="#">Destaques</a></li> -->
+                <!-- <li><a href="#">Gêneros</a></li> -->
                 <li><a href="#">Promoções</a></li>
                 <li><a href="#">Idiomas</a></li>
                 <li><a href="#">Autores</a></li>
@@ -197,5 +197,18 @@
         <div></div>
     </div>
     <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.heartImg').forEach(img => {
+                img.addEventListener('click', () => {
+                    if (img.src.includes('heart%20red.png')) {
+                        img.src = 'Imagens/heart%20red2.png';
+                    } else {
+                        img.src = 'Imagens/heart%20red.png';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

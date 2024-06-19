@@ -214,6 +214,10 @@ main h2 {
     height: 20px;
 }
 
+.heartImg {
+    cursor: pointer;
+}
+
 
 .comprar {
     background-color: #1ABC9C;
