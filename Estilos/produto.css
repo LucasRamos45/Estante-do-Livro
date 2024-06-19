@@ -5,11 +5,6 @@ body {
     padding: 0;
 }
 
-#menuImage{
-    width: 30px;
-    height: 30px;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -83,7 +78,6 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-
 }
 
 .btn {
@@ -120,4 +114,21 @@ h1 {
 
 .payment-methods {
     text-align: center;
+}
+
+.quantity {
+    margin: 20px 0;
+}
+
+.quantity label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.quantity input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
